@@ -13,7 +13,6 @@
         }
 
         body{
-            border: 3px solid pink;
             margin-top: 20%;
         }
         a{
@@ -25,8 +24,8 @@
 </head>
 <body>
     <h1 class="display-3 fw-bold">Counter</h1>
-    
-    <a class = "btn btn-danger btn-rounded">Add two visits!</a>
-    <a class="btn btn-success btn-rounded">Reset</a>
+    <p>{{session['integer']}}</p>
+    <a href= "/plus" class = "btn btn-danger btn-rounded">Add two visits!</a>
+    <a href="/destroy_session" class="btn btn-success btn-rounded">Reset</a>
 </body>
 </html>
